@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Code for smarthome system user interface-->
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Loading jquery and custom smarthome scripts and stylesheet-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="smarthomescript2_2.js"></script>
+<link rel="stylesheet" href="smarthomestyle2_0.css">
+<body>
+  <div class="header"><h1>Welcome!</h1></div>
+  <div>
+    <p>Automation</p>
+    <a onclick="autoOn()"><button>On</button></a> <!--Button for setting automation ON-->
+    <a onclick="autoOff()"><button>Off</button></a> <!--Button for setting automation OFF-->
+    <h2 id="automationstatus">Automation:</h2>
+    <p id="timestamp">Last measurement:</p>
+    <p id="temperature">Temperature:</p>
+    <p id="humidity">Humidity:</p>
+    <p id="luminance">Luminance:</p>
+    <h2 id="lightstatus">Lights:</h2>
+    <h2 id="fanstatus">Fan:</h2>
+    <div id="switches">
+      <p>Light switch</p>
+      <a onclick="lightOn()"><button>On</button></a> <!--Button for setting lights ON-->
+      <a onclick="lightOff()"><button>Off</button></a> <!--Button for setting lights OFF-->
+      <p>Fan switch</p>
+      <a onclick="fanOn()"><button>On </button></a> <!--Button for setting fan ON-->
+      <a onclick="fanOff()"><button>Off </button></a> <!--Button for setting fan OFF-->
+    </div>
+  </div>
+  <div class="footer"><i>2018 Created by Susanna Landström & Topi Vakkuri</i></div>
+</body>
+</html>
